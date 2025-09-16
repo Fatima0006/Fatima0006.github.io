@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Futuro</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+      background: #f2f0eb;
+      color: #240046;
+    }
+
+    /* Navbar */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #3C096C;
+      padding: 15px 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+    display: flex;
+    justify-content: space-between; /* nombre a la izquierda, menú a la derecha */
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0 20px; /* espacio horizontal */
+    }
+
+    nav ul li {
+    margin: 0 15px;
+    }
+
+    nav ul li a {
+    text-decoration: none;
+    color: #f5f6fa;
+    font-weight: bold;
+    transition: color 0.3s;
+    }
+
+    /* Nombre destacado */
+    nav ul .nombre a {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    cursor: default; /* sin manita porque no es link */
+    }
+
+    /* Alinear el bloque de botones a la derecha */
+    nav ul .menu {
+    display: flex;
+    }
+
+
+    /* Secciones */
+    section {
+      padding:70px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #3C096C;
+    }
+
+    .card {
+      background: #e6ccef;
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Proyectos en grid */
+    .proyectos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #3C096C;
+      color: #f5f6fa;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menú de navegación -->
+  <nav>
+  <ul>
+    <li class="nombre"><a>Fatima Mendoza</a></li>
+    <div class="menu">
+      <li><a href="#presentacion">Presentación</a></li>
+      <li><a href="#tecnologias">Tecnologías</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+ <!-- <li><a href="curriculum.html" target="_blank">Currículum</a></li> -->
+    </div>
+  </ul>
+</nav>
+
+
+
+  <!-- Sección Presentación -->
+  <section id="presentacion">
+    <h2>Presentación Personal</h2>
+    <div class="card">
+      <p>
+        Soy <strong>Fullstack Senior</strong> especializada en <strong>diseño y experiencia 
+        de usuario</strong>, con un enfoque en la creación de aplicaciones web y móviles que 
+        destacan por su estética, usabilidad y rendimiento. Mi objetivo siempre ha 
+        sido construir soluciones digitales que no solo funcionen bien, sino que 
+        también ofrezcan una experiencia atractiva e intuitiva para los usuarios.
+      </p>
+    </div>
+  </section>
+
+  <!-- Sección Tecnologías -->
+  <section id="tecnologias">
+    <h2>Tecnologías y Lenguajes</h2>
+    <div class="card">
+      <p>
+        A lo largo de mi carrera he perfeccionado el uso de, <strong> C#, JavaScript, SQL</strong> y 
+        frameworks como <strong>React y .NET</strong>, herramientas que inicié en la universidad y que sigo 
+        aplicando en proyectos actuales. Gracias a estas tecnologías, he podido desarrollar 
+        interfaces modernas, responsivas y orientadas al diseño, integrando además principios 
+        de UI/UX en cada etapa de mis proyectos.
+      </p>
+    </div>
+  </section>
+
+  <!-- Sección Proyectos -->
+  <section id="proyectos">
+    <h2>Proyectos Realizados</h2>
+    <div class="proyectos">
+      <div class="card">
+        <h3>Proyecto 1 - Plataforma de Transporte</h3>
+        <p>Creé una aplicación web que mostraba rutas y horarios de transporte, priorizando 
+        la claridad en la visualización de datos y una interfaz amigable para los usuarios.</p>
+      </div>
+      <div class="card">
+        <h3>Proyecto 2 - Sistema de reservas</h3>
+        <p>Desarrollé un sistema web para reservar viajes, integrando pagos en 
+        línea con un diseño limpio y accesible que facilita la navegación.</p>
+      </div>
+      <div class="card">
+        <h3>Proyecto 3 - Aplicación universitaria</h3>
+        <p>Diseñé y desarrollé una app móvil para la gestión de materias, tareas y calificaciones, 
+        implementando un login por roles con interfaces diferenciadas y optimizadas para alumnos, 
+        maestros y administradores.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 - Mi CV Futuro
+  </footer>
+
+</body>
+</html>
